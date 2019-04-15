@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>
+    Client OWM
+  </title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no'
+    name='viewport' />
+  <link rel="stylesheet" type="text/css"
+    href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-select@1.13.7/dist/css/bootstrap-select.min.css">
+  <link href="assets/css/material-dashboard.min.css" rel="stylesheet" />
+  <link href="assets/css/loader.css" rel="stylesheet" />
+</head>
+
+<body>
+
+
+
+  <div id="app">
+    <div class="container">
+      <div v-if="isHidden" id="loader"></div>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header card-header-primary">
+              <h4 class="card-title" style="font-family: Arial;font-weight: bold;"><b>OWM Consult Weather</b></h4>
+              <p class="card-category" style="font-family: monospace !important;"> by Gabriel Emerich</p>
+              <i class="material-icons"
+                style="float: right; font-size: 3em;margin-top: -47px;margin-right: 22px;">flash_on</i>
+            </div>
+            <div class="card-body">
+              <form-cad></form-cad>
+              <div class="table-responsive">
+                <table class="table">
+                  <thead class=" text-primary">
+                    <th>
+                      ID
+                    </th>
+                    <th>
+                      Name
+                    </th>
+                    <th>
+                      Country
+                    </th>
+                    <th>
+                      Population
+                    </th>
+                    <th>
+                      Latitude
+                    </th>
+                    <th>
+                      Longitude
+                    </th>
+
+                    <th>
+
+                    </th>
+                  </thead>
+                  <tbody>
+                    <tr v-for="cidade in cidades">
+                      <td>
+                        {{cidade.id}}
+                      </td>
+                      <td>
+                        {{cidade.nome}}
+
+                      </td>
+                      <td>
+                        {{cidade.cod_pais}}
+
+                      </td>
+                      <td>
+                        {{cidade.populacao}}
+
+                      </td>
+                      <td class="text-primary">
+                        {{cidade.latitude}}
+                      </td>
+                      <td class="text-primary">
+                        {{cidade.longitude}}
+                      </td>
+
+                      <td>
+                        <a href="#" v-on:click.prevent="forecastByid(cidade.id)" title="5 day forecast" data-toggle="modal"
+                          data-target=".bd-example-modal-lg"><i class="material-icons">cloud</i></a>
+                      </td>
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog modal-lg">
+              <div class="modal-content">
+                <div class="modal-body">
+                  <h5>5 day forecast</h5>
+                  <div class="table-responsive">
+                    <table class="table">
+                      <thead class=" text-primary">
+                        <th>
+                          Date/Time
+                        </th>
+                        <th>
+                          Weather
+                        </th>
+
+                        <th>
+                          Temperature
+                        </th>
+                        <th>
+                          Maximum temperature
+                        </th>
+                      </thead>
+                      <tbody>
+                        <tr v-for="cf in cidades_forecast">
+                          <td>
+                            {{cf.dt_txt}}
+                          </td>
+                          <td>
+                            {{cf.weather[0].main}}
+
+                          </td>
+                          <td>
+                            {{cf.main.temp}} ºF
+
+                          </td>
+                          <td>
+                            {{cf.main.temp_max}} ºF
+                          </td>
+                        </tr>
+
+                      </tbody>
+                    </table>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+  <script src="assets/js/core/jquery.min.js"></script>
+  <script src="assets/js/core/popper.min.js"></script>
+  <script src="assets/js/material-dashboard.min.js"></script>
+  <script src="assets/js/core/bootstrap-material-design.min.js"></script>
+  <script src="assets/js/plugins/bootstrap-notify.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+  <script src="assets/js/services/config.js"></script>
+  <script src="assets/js/util.js"></script>
+  <script src="assets/js/services/owm.service.js"></script>
+  <script src="assets/js/components/form.component.js"></script>
+  <script src="assets/js/app.js"></script>
+
+
+
+
+</body>
+
+</html>
