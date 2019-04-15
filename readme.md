@@ -2,7 +2,7 @@
 <h3>Tecnologias Utilizadas</h3>
 <p>Para o desenvolvimento da aplicação baseando-se em seu nível de complexidade, foram utilizadas as seguintes tecnologias:</p>
 <ul>
-  <li>JAVA 8</li>
+  <li><a href="https://www.oracle.com/br/java/">JAVA 8</a></li>
   <li><a href="https://vuejs.org/">Vue.js</a></li>
   <li><a href="https://github.com/axios/axios">Axios</a></li>
   <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
