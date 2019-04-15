@@ -5,7 +5,7 @@
   <li>IDE Java Spring Tool Suite ou Eclipse/NetBeans com dependências necessárias para executar aplicações Spring/SpringBoot</li>
   <li>Apache TOMCAT <b>PS: Caso não utilize a IDE do Spring (STS)</b></li>
   <li>SGBD Mysql 5.7</li>
-  <li>Inserir paramêtros de conexão com o banco <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html"<b>application.properties</b></a></li>
+  <li>Inserir parâmetros de conexão com o banco <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html"<b>application.properties</b></a></li>
 
 </ul>
 <h4>Diretórios</h4>
