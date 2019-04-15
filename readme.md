@@ -8,3 +8,5 @@
 
 <h1>Como Utilizar</h1>
 <img src="https://i.imgur.com/tJf4vHI.jpg"></img>
+
+<img src="https://imgur.com/dnatGDJ.jpg"></img>
