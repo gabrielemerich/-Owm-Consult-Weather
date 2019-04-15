@@ -8,6 +8,9 @@
   <li>Inserir paramêtros de conexão com o banco <a href="https://docs.spring.io/spring-boot/docs/current/reference/html/common-application-properties.html"<b>application.properties</b></a></li>
 
 </ul>
+<h4>Diretórios</h4>
+<p><b>Back:</b> OpenWeatherAPI </p>
+<p><b>Front:</b> OwmClient </p>
 
 <h1> 1. Como Utilizar</h1>
 <p>1.1 - A figura abaixo ilustra a tela inicial de cadastros. Para dar início ao cadastro de uma nova cidade, basta preencher o campo <strong>Cit,Country</strong>, em seguida os campos <strong>Latitude e Logitude </strong> serão automaticamente preenchidos. Por fim, clique em SAVE para cadastrar.</p>
