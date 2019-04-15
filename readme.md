@@ -1,7 +1,17 @@
 <h1>Owm Consult Weather</h1>
+<h3>Tecnologias Utilizadas</h3>
+<p>Para o desenvolvimento da aplicação baseando-se em seu nível de complexidade, foram utilizadas as seguintes tecnologias:</p>
+<ul>
+  <li><a href=" https://www.oracle.com/technetwork/java/javase/documentation/index.html">Java 8</a></li>
+  <li><a href="https://vuejs.org/">Vue.js</a></li>
+  <li><a href="https://github.com/axios/axios">Axios</a></li>
+  <li><a href="https://getbootstrap.com/">Bootstrap 4</a></li>
+</ul>
+<h4>A Interface</h4>
+<p>A interface minimalista foi desenvolvida atendendo os princípios de usabilidade, sem muitos detalhes, sendo clara e objetiva.</p>
 <h3>Requisitos para executar a aplicação em desenvolvimento:</h3>
 <ul>
-  <li>JAVA 8</li>
+  <li><a href="https://www.oracle.com/br/java/">JAVA 8</a></li>
   <li>IDE Java Spring Tool Suite ou Eclipse/NetBeans com dependências necessárias para executar aplicações Spring/SpringBoot</li>
   <li>Apache TOMCAT <b>PS: Caso não utilize a IDE do Spring (STS)</b></li>
   <li>SGBD Mysql 5.7</li>
