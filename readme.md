@@ -10,8 +10,8 @@
 </ul>
 
 <h1> 1. Como Utilizar</h1>
-<p>1.1 - A figura abaixo ilustra a tela inicial de cadastros. Para dar início ao cadastro de uma nova cidade, basta preencher o campo <strong>Cit,Country</strong>, em seguida os campos <strong>Latitude e Logitude </strong> serão automáticamente preenchidos. Por fim, clique em SAVE para cadastrar.</p>
+<p>1.1 - A figura abaixo ilustra a tela inicial de cadastros. Para dar início ao cadastro de uma nova cidade, basta preencher o campo <strong>Cit,Country</strong>, em seguida os campos <strong>Latitude e Logitude </strong> serão automaticamente preenchidos. Por fim, clique em SAVE para cadastrar.</p>
 <img src="https://i.imgur.com/tJf4vHI.jpg"></img>
 
-1.2 - Para obter a previsão climática de 5 dias para uma cidade específica, basta clicar no ícone de núvem da tabela de listagens, como ilustra figura abaixo.
+1.2 - Para obter a previsão climática de 5 dias de uma determinada cidade, basta clicar no ícone de núvem da tabela de listagem, como ilustra figura abaixo.
 <img src="https://imgur.com/dnatGDJ.jpg"></img>
